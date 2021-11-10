@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figuras geometricas | Curso practico de JS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <header>
@@ -13,7 +17,7 @@
         </h1>
         <p>Este es el primer taller del curso practico de JavaScript</p>
     </header>
-    <section>
+    <section id="cuadrados">
         <h2>Calcula el area y perimetro de un cuadrado</h2>
         <form action="">
             <label for="InputCuadrado">
@@ -29,7 +33,7 @@
             </button>
         </form>
     </section>
-    <section>
+    <section id="triangulos">
         <h2>Calcula el area y perimetro de un triangulo</h2>
         <form action="">
             <label for="InputTriangulo_1">
@@ -45,7 +49,7 @@
             </label>
             <input id="InputTriangulo_3" type="number">
             <label for="InputTriangulo_height">
-                <br>Escribe cuanto mide la altuira de tu triangulo
+                <br>Escribe cuanto mide la altura de tu triangulo
             </label>
             <input id="InputTriangulo_height" type="number">
             <br>
@@ -55,9 +59,12 @@
             <button type="button" onclick="calcularAreaTriangulo()">
                 Calcula el area
             </button>
+            <button type="button" onclick="calcularAlturaTrianguloIsosceles()">
+                Calcular altura de un triangulo isosceles
+            </button>
         </form>
     </section>
-    <section>
+    <section id="circulos">
         <h2>Calcula el area y perimetro de un circulo</h2>
         <form action="">
             <label for="inputCirculo">

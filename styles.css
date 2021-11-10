@@ -1,0 +1,66 @@
+/*font-family: 'Abril Fatface', cursive;
+font-family: 'Mochiy Pop P One', sans-serif;*/
+:root{
+    --soft-purple: #594778fc;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+header h1{
+    color: var(--soft-purple);
+}
+
+#cuadrados{
+    position: relative;
+    display: block;
+    min-width: 300px;
+    width: 70%;
+    min-height: 150px;
+    height: 25%;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    background-color: var(--soft-purple);
+}
+
+#triangulos{
+    position: relative;
+    display: block;
+    min-width: 300px;
+    width: 70%;
+    min-height: 230px;
+    height: 25%;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    background-color: var(--soft-purple);
+}
+
+#circulos{
+    position: relative;
+    display: block;
+    min-width: 300px;
+    min-height: 150px;
+    width: 70%;
+    height: 25%;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    background-color: var(--soft-purple);
+}
+
+section h2{
+    font-size: 1.7rem;
+}

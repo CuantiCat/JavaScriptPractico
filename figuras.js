@@ -30,6 +30,7 @@ console.log("Los lados del triangulo miden: "
 const alturaTriangulo = 5.5;
 console.log("La altura del triangulo es: " + alturaTriangulo + "cm");
 */
+
 function perimetroTriangulo(lado1,lado2,base){
     return lado1 + lado2 + base;
 }
@@ -115,3 +116,42 @@ function calcularAreaCirculo(){
     const area = areaCirculo(value);
     alert(area);
 }
+
+function is_Isosceles(lado1, lado2, base){
+    if(lado1 == lado2 || lado1 == base || lado2 == base){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+
+function calcularAlturaTrianguloIsosceles(){
+    var input = document.getElementById("InputTriangulo_1");
+    const lado1 = Number(input.value);
+    input = document.getElementById("InputTriangulo_2");
+    const lado2 = Number(input.value);
+    input = document.getElementById("InputTriangulo_3");
+    const base = Number(input.value);
+    if(is_Isosceles(lado1, lado2, base) == true){
+        var a, b;
+        if(lado1 == lado2){
+            a = lado1;
+            b = base;
+        }
+        else if(lado1 == base){
+            a = lado1;
+            b = lado2;
+        }
+        else{
+            a = lado2;
+            b = lado1;
+        }
+        alert(Math.sqrt((a*a)-((b*b)/4)));
+    }
+    else{
+        alert("No es un triangulo isosceles");
+        return 0;
+    }
+}
+//calcularAlturaTrianguloIsosceles(25,25,30);
