@@ -18,6 +18,38 @@ function onClickButtonPriceDiscount(){
     resultP.innerText = "El precio con descuento son: $" + precioConDescuento
 }
 
+//cupones
+
+const cupones = {
+    codigo: ["CUPONBONITO#13%", "CUPONlocO", "Qponsito129"],
+    descuentoDelCupon: [13, 99, 5],
+}
+
+function verificarCupones(cupon){
+    for(var i in cupones.codigo){
+        if(cupones.codigo[i] == cupon){
+            return i;
+        }
+    }
+    return -1;
+}
+
+function onClickButtonCuponDiscount(){
+    const price = document.getElementById("cuponPrice");
+    const priceValue = price.value;
+    const cupon = document.getElementById("cuponCode");
+    const cuponValue = cupon.value;
+    const valido = verificarCupones(cuponValue);
+    const resultP = document.getElementById("resultPrice");
+    if(valido == -1){
+        resultP.innerText = "El cupon no es valido";
+    }
+    else{
+        const precioConDescuento = calcularPrecioConDeSCuento(priceValue, cupones.descuentoDelCupon[valido]);
+        resultP.innerText = "El cupon es valido por un total de: " + cupones.descuentoDelCupon[valido] + "% por lo que el precio total sera: " + precioConDescuento;
+    }
+}
+
 /*console.log({
     precioOriginal,
     descuento,

@@ -25,6 +25,14 @@
             <button type="button" onclick="onClickButtonPriceDiscount()">
                 Calcular el precio con descuento
             </button>
+            <p>¿Tienes un cupon?</p>
+            <label for="cuponPrice">Ingresa el precio de tu producto</label>
+            <input type="number" id="cuponPrice">
+            <label for="cuponCode">Ingresa tu cupon</label>
+            <input type="text" id="cuponCode">
+            <button type="button" onclick="onClickButtonCuponDiscount()">
+                Verificar cupon y precio con descuento
+            </button>
             <p id="resultPrice"></p>
         </form>
     </section>
