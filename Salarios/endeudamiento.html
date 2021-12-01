@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CapacidadDeEndeudamiento</title>
+    <link rel="stylesheet" href="./styles/endeudamientoMobile.css">
+</head>
+<body>
+    <nav>
+        <a id="index" href="./index.html">
+            <figure>
+                <img id="indexFig" onmouseover="buttonAnimation('indexFig')" onmouseleave="buttonAnimationOut('indexFig')" src="./icons/fgo-artoria-pendragon-ruler.gif" alt="index"/>
+                <figcaption>Descripcion</figcaption>
+            </figure>
+        </a>
+        <a id="capacidad" href="">
+            <figure>
+                <img src="./icons/artoria-pendragon-ruler.gif" alt="index"/>
+                <figcaption>Descripcion</figcaption>
+            </figure>
+        </a>
+        <a id="salarios" href="./salarios.html">
+            <figure>
+                <img src="./icons/1ac.gif" alt="index"/>
+                <figcaption>Descripcion</figcaption>
+            </figure>
+        </a>
+    </nav>
+    <main>
+        <div id="inputContainer">
+            <label for="ingresos">Ingresos mensuales</label>
+            <input type="number" id="ingresos">
+            <label for="gastos">Gastos mensuales</label>
+            <input type="number" id="gastos">
+            <button type="button" onclick="calcularCapacidadDeEndeudamiento()">Calcula tu capacidad de endeudamiento</button>
+            <p id="capacidadEndeudamiento"></p>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <img src="./icons/platzilogo_opt.png" alt="platzilogo">
+            <p>
+                Hector Arturo Hernandez Zamora
+                Prof: Juan David Castro
+            </p>
+        </div>
+    </footer>
+    <script src="./capacidad.js"></script>
+</body>
+</html>
