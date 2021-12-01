@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+
+nav{
+    position: fixed;
+    margin-left: 5vw;
+    height: 15vh;
+    width: 90vw;
+    top: 61%;
+    text-align: center;
+    background-color: gray;
+}
+
+nav #index figure{
+    display: inline-block;
+    width: 15%;
+}
+
+nav #capacidad{
+    padding-left: 15%;
+}
+
+nav #capacidad figure{
+    display: inline-block;
+    width: 10%;
+}
+
+nav #salarios{
+    padding-left: 15%;
+}
+
+nav #salarios figure{
+    display: inline-block;
+    width: 10%;
+}
+
+nav #index figure img{
+    position: relative;
+    width: 8vw;
+    height: 20vw;
+}
+
+nav #capacidad figure img{
+    position: relative;
+    width: 8vw;
+    height: 20vw;
+}
+
+nav #salarios figure img{
+    position: relative;
+    width: 8vw;
+    height: 20vw;
+}
+
+/*Main*/
+main #inputContainer{
+    background-color: burlywood;
+}
+
+/*Footer*/
+footer{
+    position: fixed;
+    height: 25%;
+    top: 75%;
+    text-align: center;
+    background-color: black;
+    width: 100vw;
+}
+footer div img{
+    width: 200px;
+    height: 75px;
+}
+
+footer div p{
+    color: white;
+}
